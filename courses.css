@@ -1,0 +1,420 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    font-family:Arial;
+    border-radius: 25%;
+}
+.universal-div {
+    width: 100%;
+    height: 100%;
+    background-color: #889AA4;
+    
+}
+
+
+.courses-content {
+    padding:45px;
+    margin:10px;
+    height:fit-content;
+    width: fit-content;
+    background-color:aliceblue;  
+    align-content: center;
+    
+}
+
+
+.HTMLCSS {
+    background-color:tomato;
+    height:250px;
+    width:200px;
+    margin:2px;
+    padding: 2px;
+    float:left;
+    border: outset;
+    font-size: large;
+    border-color:white;
+    border-radius: 25px;
+    text-align: center;
+
+}
+.HTMLCSS p{
+font-size: small;
+}
+
+.HTMLCSS img{
+  border-radius:50% ;
+}
+.JavaScript {
+    background-color:rgb(225, 210, 41);
+    height:250px;
+    width:200px;
+    margin:2px;
+    padding:2px;
+    border-color:white;
+    float: left;
+    border: outset;
+    font-size: large;
+    border-radius: 25px;
+    text-align: center;
+}
+.JavaScript p{
+    font-size: small;
+}
+.JavaScript img {
+    border-radius:50% ;
+    
+}
+.jQuery {
+    background-color :white;
+    height:250px;
+    width:200px;
+    margin:2px;
+    padding:2px;
+    float:right;
+    border-color: white;
+    font-size: large;
+    border: outset;
+    border-radius: 25px;
+    text-align: center;
+}
+.jQuery p{
+    font-size: small;
+}
+.jQuery img{
+    border-radius:50% ;
+}
+.Ruby {
+    background-color :hsl(0, 78%, 58%);
+    height:250px;
+    width:200px;
+    margin:2px;
+    padding:2px;
+    float:right;
+    border: outset;
+    border-color: white;
+    font-size: large;
+    border-radius: 25px;
+    text-align: center;
+}
+.Ruby p {
+    font-size: small;
+}
+.Ruby img{
+    border-radius:50% ;
+}
+.RubyonRails5{
+    background-color :white;
+    height:250px;
+    width:200px;
+    margin:2px;
+    padding:2px;
+    border-color: white;
+    border: outset;
+    float:left;
+    font-size:large;
+    border-radius: 25px;
+    text-align: center;
+   
+}
+.RubyonRails5 p{
+    font-size: small;
+
+} 
+.RubyonRails5 img{
+
+   border-radius:50% ;
+
+} 
+.Java{
+    background-color :#5382a1;
+    height:250px;
+    width:200px;
+    margin:2px;
+    padding:2px;
+    float:left;
+    border: outset;
+    border-color: white;
+    font-size:large;
+    border-radius: 25px;
+    text-align: center;
+}
+.Java p{
+    font-size: small;
+}
+.Java img{
+    border-radius:50% ;
+}
+.PHP{
+    background-color :#787CB5;
+    border-color: white;
+    height:250px;
+    width:200px;
+    margin:2px;
+    padding:2px;
+    float:right;
+    font-size:large;
+    border: outset;
+    border-radius: 25px;
+    text-align: center;
+}
+.PHP p{
+    font-size: small;
+
+}
+.PHP img{
+    border-radius:50% ;
+
+}
+.Python{
+    background-color :#FFD43B;
+    height:250px;
+    width:200px;
+    margin:2px;
+    padding:2px;
+    float:right;
+    border-color: white;
+    border: outset;
+    font-size:large;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.Python p{
+    font-size: small;
+}
+.Python img{
+    border-radius:50% ;
+}
+
+.Git{
+    background-color:#F1502F;
+    height:250px;
+    width:200px;
+    margin:2px;
+    padding:2px;
+    float:left;
+    border-color: white;
+    font-size:large;
+    border: outset;
+    border-radius: 25px;
+    text-align: center;
+}
+.Git p{
+    font-size: small;  
+
+}
+.Git img{
+    border-radius:50% ; 
+
+}
+.SQL{
+    background-color :white;
+    height:250px;
+    width:200px;
+    margin:2px;
+    padding:2px;
+    float:left;
+    border: outset;
+    border-color: white;
+    font-size:large;
+    border-radius: 25px;
+    text-align: center;
+}
+.SQL p{
+    font-size: small; 
+}
+.SQL img{
+    border-radius:50% ; 
+}
+.Sass{
+    background-color :#ed8cbc;
+    height:250px;
+    border-color: white;
+    width:200px;
+    margin:2px;
+    padding:2px;
+    float:right;
+    font-size:large;
+    border-radius: 25px;
+    border: outset;
+    text-align: center;
+}
+.Sass p{
+    font-size: small; 
+}
+
+.Go{
+    background-color: #00C5CD;
+    border-color: white;
+    height:250px;
+    width:200px;
+    margin:2px;
+    padding:2px;
+    float:left;
+    border: outset;
+    font-size:large;
+    border-radius: 25px;
+    text-align: center;
+
+}
+.Go p{
+    font-size: small; 
+}
+.Go img{
+    border-radius:50% ; 
+}
+.React{
+    background-color :#61DBFB;
+    height:250px;
+    border-color: white;
+    width:200px;
+    margin:2px;
+    padding:2px;
+    float:right;
+    border: outset;
+    font-size:large;
+    border-radius: 25px;
+    text-align: center;
+}
+.React p{
+    font-size: small; 
+}
+.React img{
+    border-radius:50% ; 
+}
+.Nodejs{
+    background-color :#68A063;
+    border-color: white;
+    height:250px;
+    width:200px;
+    margin:2px;
+    padding:2px;
+    float:right;
+    border: outset;
+    font-size:large;
+    border-radius: 25px;
+    text-align: center;
+}
+.Nodejs p{
+    font-size: small; 
+
+}
+
+.CommandLine{
+    background-color :grey;
+    height:250px;
+    width:200px;
+    margin:2px;
+    padding:2px;
+    float:left;
+    border: outset;
+    font-size:large;
+    border-color: white;
+    border-radius: 25px;
+    text-align: center;
+}
+.CommandLine p{
+    font-size: small; 
+}
+.CommandLine img{
+  border-radius: 50%;
+}
+.refactorylogo{
+
+ padding:1px;
+ width:80px; 
+ height:50px;
+
+}
+
+.stores{
+    padding:2px;
+    display: inline;
+    font-size:small;
+    height: 100px;
+    width: 150px;
+    margin: 3px;
+    background-color: lightblue;
+    
+}
+.copy{
+    float:left; 
+    font-size: small;
+}  
+    
+
+
+.services li{
+    font-size: small;
+}
+
+.support li{
+    font-size: small;
+     
+}
+
+.connect li{
+    font-size: small;  
+        
+}
+.contactus{
+    height:25px;
+    width:80px;
+    float:right;
+    background-color: brown;
+    border-style:initial;
+    font-size:small;
+    padding:2px;
+    border-radius: 25px;
+
+}
+
+.main{
+    align-self: center;
+    padding:2px;
+    margin:2px;
+    height: 400px;
+    width: 1200px;
+    background-color: rgb(196, 134, 21);
+}
+
+.information{
+    width: 800px;
+    background-color: lightcoral;
+    height:200px;
+    padding:2px;
+    margin:2px;
+    display: inline;
+    float: right;
+}
+.information ul{
+    list-style: none;
+    font-size:large;
+    line-height:22px;
+    float:left;
+    padding:2px;
+    margin:2px 40px 1px 80px;
+}
+
+
+span{
+    background-color:gray;
+    border-radius: 50%;
+
+}
+.summary{
+    font-size:medium;
+    text-align: center;
+}
+.closure{
+    height: 50px;
+    background-color: lightskyblue;
+    width: 1200px;
+    
+}
+
+
+
+

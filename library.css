@@ -1,6 +1,7 @@
 html, body {
     width: 100%;
     height: 100%;
+    font-family:Arial;
 }
 .main-div {
     width: 100%;
@@ -38,13 +39,15 @@ html, body {
    border-radius: 50px;
    float:left;
 }
-.arrow {
+.down-arrow {
     border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
     transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  margin: 2px 2px 2px 4px ;
+  float: right;
   }
 .dropbtn:hover,.dropbtn:focus{
     background-color:honeydew;
@@ -69,6 +72,128 @@ html, body {
     text-decoration: none;
     display: block;
 }
-.top-dropdown-content a:hover{
+.top-dropdown a:hover{
     background-color:honeydew;
+}
+.top-dropdown :hover  .top-dropdown-content{
+    display: block;
+}
+
+.navigation{
+height:1000px;
+width: 250px;
+background-color: blanchedalmond;
+display: block;
+margin: 2px;
+padding:2px;
+border-style: none;
+
+
+}
+.navigation button{
+    width:250px;
+    height: 50px;
+    display: block;
+    text-align:left;
+    font-size: medium;
+    padding:2px; 
+    margin:2px; 
+    border-style: none;   
+}
+
+
+.navigation button a{
+    text-decoration: none;
+    color: black;
+}
+
+.navigation img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+
+.navigation a:hover,.html-dropdown:hover .htmldropdownbtn{
+    background-color: honeydew;
+} 
+
+.html-dropdown{
+    float: left;
+    overflow: hidden;
+}
+.htmldropdownbtn{
+    height: 50px;
+    width: 250px;
+    border-style:inset ;
+    margin: 20px; 
+    padding: 2px;
+    position:absolute;
+    cursor: pointer;
+    background-color:tomato;
+}
+.html-dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color:tomato;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+.html-dropdowncontent a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align:left;
+    
+}
+.html-dropdowncontent a:hover{
+    background-color: honeydew;
+}
+.html-dropdown:hover .html-dropdowncontent{
+    display: block;
+}
+
+.navigation a:hover,.js-dropdown:hover .jsdropdownbtn{
+    background-color: honeydew;
+} 
+.js-dropdown{
+    float: left;
+    overflow: hidden;
+}
+.jsdropdownbtn{
+    height: 50px;
+    width: 250px;
+    border-style:inset ;
+    margin: 20px; 
+    padding: 2px;
+    position:absolute;
+    cursor: pointer;
+    background-color:rgb(225, 210, 41);
+}
+.js-dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color:rgb(225, 210, 41);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+.js-dropdowncontent a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align:left;
+    
+}
+.js-dropdowncontent a:hover{
+    background-color: honeydew;
+}
+.js-dropdown:hover .html-dropdowncontent{
+    display: block;
 }

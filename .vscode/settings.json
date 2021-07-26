@@ -1,4 +1,5 @@
 {
     "files.autoSave": "afterDelay",
-    "git.suggestSmartCommit": false
+    "git.suggestSmartCommit": false,
+    "git.ignoreLimitWarning": true
 }

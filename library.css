@@ -47,7 +47,7 @@ html, body {
     transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   margin: 2px 2px 2px 4px ;
-  float: right;
+  float:right;
   }
 .dropbtn:hover,.dropbtn:focus{
     background-color:honeydew;
@@ -196,4 +196,14 @@ border-style: none;
 }
 .js-dropdown:hover .html-dropdowncontent{
     display: block;
+}
+.third-div{
+    background-color: aquamarine;
+    height: 800px;
+    width: 800px;
+    margin:2px;
+    padding:2px;
+}
+.info-grid{
+
 }

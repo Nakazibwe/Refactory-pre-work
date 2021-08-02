@@ -4,10 +4,10 @@ html{
 
 body {
     background-color:#B6E5D8;
-    font-family:Arial;
     border-radius: 25%;
     min-height: 100%;
-    height: auto;
+    height: 100%;
+    width: inherit;
     position: relative;
 }
 /* .universal-div {
@@ -395,9 +395,16 @@ span{
     font-size:medium;
     text-align: center;
 }
+
+
+.footer{
+    width:inherit;
+    height:380px;
+    background-color: #8FDDE7;
+    padding: 10px;
+   }
 .closure{
     height: 50px;
-
     width: 1200px;
     
 }
@@ -419,12 +426,13 @@ list-style: none;
 }
 a{
     text-decoration: none;
+    color: black;
 }
 .top-grid{
     
     background-color:#8FDDE7;
     height:50px;
-    width:1380px;
+    width:inherit;
     padding:2px;
     border-style: none;
     

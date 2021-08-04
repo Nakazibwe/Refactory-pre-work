@@ -6,66 +6,279 @@
         <link rel="stylesheet" href="library.css">
     </head>
     <body>
-                
+           <!--The page header -->     
         <div  class= "top-grid">
+            <!--The left side of the page header-->
             <div class ="left-top-grid">
                     <img src ="refactorylogo.png" height="40px" width= "80px" >
                     
                     <input class= "search-bar" type="text" placeholder=" Search Slides">
 
             </div>
+            <!--The right side of the page header-->
                 <div class = "right-top-grid">
                     <button class ="top-grid-dropdown-button"><img src="Profilepic.png" height ="40px" width="40px"><a href="#">CAT09 Grace Nakazibwe</a><i class="down-arrow"></i></button>
                     <div class ="top-right-dropdown-content">
                         <a href="#">Dashboard</a>
                         <a href="#">Account Settings</a>
                         <a href="#">Log out </a>
+                    </div>    
                 </div>
         </div>
-        <div class ="main">
-             
-            <ul class="left-div">
-            
+        <!--The main section of the page-->
+          <div class ="main">
+            <!--The ul on the left side of the main side of the page. --> 
+            <div class = "navigation">
+               <ul class="left-div">
+               <!--htmldropdownbtn li on the navigation bar-->
                     <li class ="htmldropdownbtn"><img src="HTMLlogo.png" height ="40px" width="40px"><a href="#"> HTML & CSS</a><i class="down-arrow"></i>
+                        <!--html-dropdowncontent inside the htmldropdownbtn on the main side of the page-->
                         <div class ="html-dropdowncontent">
-                            <ul>
-                            <li><a href= "#" ><select><option><input type="checkbox"></option></select>All</a></li>
-                            <li><a href= "#" ><select><option><input type="checkbox"></option></select>I</a></li>
-                            <li><a href= "#" ><select><option><input type="checkbox"></option></select>II</a></li>
-                            <li><a href= "#" ><select><option><input type="checkbox"></option></select>III</a></li>
-                            <li><a href= "#" ><select><option><input type="checkbox"></option></select>Flex Box</a></li>
+                          <ul>
+                            <li><a href= "#" ><input type="checkbox">All</a></li>
+                            <li><a href= "#" ><input type="checkbox">I</a></li>
+                            <li><a href= "#" ><input type="checkbox">II</a></li>
+                            <li><a href= "#" ><input type="checkbox">III</a></li>
+                            <li><a href= "#" ><input type="checkbox">Flex Box</a></li>
                             </ul>
                         </div> 
                          
                     </li>
+                    <!--js-dropdownbtn li on the navigation bar-->
                     <li class ="js-dropdownbtn"><img src="javascriptlogo.png" height ="40px" width="40px"><a href="#"> JS</a><i class="down-arrow"></i>
+                        <!--js-dropdowncontent inside the js-dropdownbtn on the main side of the page-->
                         <div class ="js-dropdowncontent">
-                            <a href= "#" ><select><option><input type="checkbox"></option></select>All</a>
-                            <a href= "#" ><select><option><input type="checkbox"></option></select>I</a>
-                            <a href= "#" ><select><option><input type="checkbox"></option></select>II</a>
-                            <a href= "#" ><select><option><input type="checkbox"></option></select>III</a>
-                            <a href= "#" ><select><option><input type="checkbox"></option></select>Flex Box</a>
-                        <div>  
+                          <ul>
+                             <li><a href= "#" ><input type="checkbox">All</a></li>
+                             <li><a href= "#" ><input type="checkbox">I</a></li>
+                             <li><a href= "#" ><input type="checkbox">II</a></li>
+                             <li><a href= "#" ><input type="checkbox">III</a></li>
+                             <li><a href= "#" ><input type="checkbox">IV</a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class ="JSES6-dropdownbtn"><img src="JS (ES6).jpg" height ="40px" width="40px"><a href="#">JS (ES6)</a><i class="down-arrow"></i></li>
-                    <li class ="jQuery-dropdownbtn"><img src="jquerylogo.png" height ="40px" width="40px"><a href="#">jQuery</a><i class="down-arrow"></i></li>
-                    <li class ="Ruby-dropdownbtn"><img src="rubylogo.png" height ="40px" width="40px"><a href="#">Ruby</a><i class="down-arrow"></i></li>
-                    <li class ="Rails5-dropdownbtn"><img src="Rubyon rails.png" height ="40px" width="40px"><a href="#">Rails5</a><i class="down-arrow"></i></li>
-                    <li class ="PHP-dropdownbtn"><img src="Phplogo.png" height ="40px" width="40px"><a href="#"> PHP</a><i class="down-arrow"></i></li>
-                    <li class ="Java-dropdownbtn"><img src="javalogo.png" height ="40px" width="40px"><a href="#"> Java </a><i class="down-arrow"></i></li>
-                    <li class ="Python-dropdownbtn"><img src="pythonlogo.png" height ="40px" width="40px"><a href="#"> Python </a><i class="down-arrow"></i></li>
-                    <li class ="Command-dropdownbtn"><img src="cmdlinelogo.png" height ="40px" width="40px"><a href="#"> Command </a><i class="down-arrow"></i></li>
-                    <li class ="Git-dropdownbtn"><img src="gitlogo.png" height ="40px" width="40px"><a href="#"> Git </a><i class="down-arrow"></i></li>
-                    <li class ="SQL-htmldropdownbtn"><img src="SQLlogo.png" height ="40px" width="40px"><a href="#"> SQL </a><i class="down-arrow"></i></li>
-                    <li class ="Sass-dropdownbtn"><img src="sasslogo.png" height ="40px" width="40px"><a href="#"> Sass </a><i class="down-arrow"></i></li>
-                    <li class ="Go-dropdownbtn"><img src="goologo.png" height ="40px" width="40px"><a href="#"> Go </a><i class="down-arrow"></i></li>
-                    <li class ="React-dropdownbtn"><img src="reactlogo.png" height ="40px" width="40px"><a href="#"> React </a><i class="down-arrow"></i></li>
-                    <li class ="Nodejs-dropdownbtn"><img src="nodejslogo.png" height ="40px" width="40px"><a href="#"> Node.js </a><i class="down-arrow"></i></li>
+                    <!--JSES6-dropdownbtn li  inside the navigation on the main side -->
+                    <li class ="JSES6-dropdownbtn"><img src="JS (ES6).jpg" height ="40px" width="40px"><a href="#">JS (ES6)</a><i class="down-arrow"></i>
+                         <!--JSES6-dropdowncontent inside the JSES6-dropdownbtn on the main side of the page-->
+                        <div class ="JSES6-dropdowncontent">
+                            <ul>
+                              <li><a href= "#" ><input type="checkbox">All</a></li>
+                              <li><a href= "#" ><input type="checkbox">I</a></li>
+                              <li><a href= "#" ><input type="checkbox">II</a></li>
+                              <li><a href= "#" ><input type="checkbox">III</a></li>
+                              <li><a href= "#" ><input type="checkbox">IV</a></li>
+                              <li><a href= "#" ><input type="checkbox">V</a></li>
+                              <li><a href= "#" ><input type="checkbox">VI</a></li>
+                              <li><a href= "#" ><input type="checkbox">VI</a></li>
+                              <li><a href= "#" ><input type="checkbox">VII</a></li>
+
+                            </ul>  
+
+                        </div>  
+                    </li>
+                    <!--jQuery-dropdownbtn li  inside the navigation on the main side -->
+                    <li class ="jQuery-dropdownbtn"><img src="jquerylogo.png" height ="40px" width="40px"><a href="#">jQuery</a><i class="down-arrow"></i>
+                        <!--jQuery-dropdowncontent inside the jQuery-dropdownbtn on the main side of the page-->
+                        <div class ="jQuery-dropdowncontent">
+                            <ul>
+                              <li><a href= "#" ><input type="checkbox">All</a></li>
+                              <li><a href= "#" ><input type="checkbox">I</a></li>
+                              <li><a href= "#" ><input type="checkbox">II</a></li>
+                              <li><a href= "#" ><input type="checkbox">III</a></li>
+
+
+                            </ul>  
+
+                        </div> 
+                    </li>
+                    <!--Ruby-dropdownbtn li  inside the navigation on the main side -->
+                    <li class ="Ruby-dropdownbtn"><img src="rubylogo.png" height ="40px" width="40px"><a href="#">Ruby</a><i class="down-arrow"></i>
+                         <!--Ruby-dropdowncontent  inside the Ruby-dropdownbtn on the main side of the page-->
+                         <div class ="Ruby-dropdowncontent">
+                            <ul>
+                              <li><a href= "#" ><input type="checkbox">All</a></li>
+                              <li><a href= "#" ><input type="checkbox">I</a></li>
+                              <li><a href= "#" ><input type="checkbox">II</a></li>
+                              <li><a href= "#" ><input type="checkbox">III</a></li>
+                              <li><a href= "#" ><input type="checkbox">IV</a></li>
+                              <li><a href= "#" ><input type="checkbox">V</a></li>
+
+                            </ul>  
+
+                        </div> 
+                    </li>
+                    <!--Rails5-dropdownbtn  li  inside the navigation on the main side -->
+                    <li class ="Rails5-dropdownbtn"><img src="Rubyon rails.png" height ="40px" width="40px"><a href="#">Rails5</a><i class="down-arrow"></i>
+                          <!--Rails5-dropdowncontent inside the Rails5-dropdownbtn  on the main side of the page-->
+                          <div class ="Rails5-dropdowncontent">
+                            <ul>
+                              <li><a href= "#" ><input type="checkbox">All</a></li>
+                              <li><a href= "#" ><input type="checkbox">I</a></li>
+                              <li><a href= "#" ><input type="checkbox">II</a></li>
+                              <li><a href= "#" ><input type="checkbox">III</a></li>
+                              <li><a href= "#" ><input type="checkbox">IV</a></li>
+                              <li><a href= "#" ><input type="checkbox">V</a></li>
+                              <li><a href= "#" ><input type="checkbox">VI</a></li>
+                              <li><a href= "#" ><input type="checkbox">VII</a></li>
+                              <li><a href= "#" ><input type="checkbox">VII</a></li>
+                              <li><a href= "#" ><input type="checkbox">IX</a></li>
+                              <li><a href= "#" ><input type="checkbox">X</a></li>
+                              <li><a href= "#" ><input type="checkbox">XI</a></li>
+
+                            </ul>  
+                        </div> 
                     
+                    </li>
+                    <!--PHP-dropdownbtn  li  inside the navigation on the main side -->
+                    <li class ="PHP-dropdownbtn"><img src="Phplogo.png" height ="40px" width="40px"><a href="#"> PHP</a><i class="down-arrow"></i>
+                        <!--Rails5-dropdowncontent inside the Rails5-dropdownbtn  on the main side of the page-->
+                          <div class ="PHP-dropdowncontent">
+                            <ul>
+                              <li><a href= "#" ><input type="checkbox">All</a></li>
+                              <li><a href= "#" ><input type="checkbox">I</a></li>
+                              <li><a href= "#" ><input type="checkbox">II</a></li>
+                              <li><a href= "#" ><input type="checkbox">III</a></li>
+                              <li><a href= "#" ><input type="checkbox">IV</a></li>
+
+                            </ul>  
+                        </div> 
+                    </li>
+                    <!--Java-dropdownbtn li  inside the navigation on the main side -->
+                    <li class ="Java-dropdownbtn"><img src="javalogo.png" height ="40px" width="40px"><a href="#"> Java </a><i class="down-arrow"></i>
+                    <!--Java-dropdowncontent  inside the Java-dropdownbtn on the main side of the page-->
+                          <div class ="Java-dropdowncontent">
+                            <ul>
+                              <li><a href= "#" ><input type="checkbox">All</a></li>
+                              <li><a href= "#" ><input type="checkbox">I</a></li>
+                              <li><a href= "#" ><input type="checkbox">II</a></li>
+                              <li><a href= "#" ><input type="checkbox">III</a></li>
+                              <li><a href= "#" ><input type="checkbox">IV</a></li>
+                              <li><a href= "#" ><input type="checkbox">V</a></li>
+
+                            </ul>  
+                        </div> 
+
+                    </li>
+                    <!--Python-dropdownbtn  li  inside the navigation on the main side -->
+                    <li class ="Python-dropdownbtn"><img src="pythonlogo.png" height ="40px" width="40px"><a href="#"> Python </a><i class="down-arrow"></i>
+                    <!--Python-dropdowncontent  inside the Python-dropdownbtn on the main side of the page-->
+                          <div class ="Python-dropdowncontent">
+                            <ul>
+                              <li><a href= "#" ><input type="checkbox">All</a></li>
+                              <li><a href= "#" ><input type="checkbox">I</a></li>
+                              <li><a href= "#" ><input type="checkbox">II</a></li>
+                              <li><a href= "#" ><input type="checkbox">III</a></li>
+                              <li><a href= "#" ><input type="checkbox">IV</a></li>
+                              
+                            </ul>  
+                        </div> 
+
+                    </li>
+                    <!--Command-dropdownbtn li  inside the navigation on the main side -->
+                    <li class ="Command-dropdownbtn"><img src="cmdlinelogo.png" height ="40px" width="40px"><a href="#"> Command </a><i class="down-arrow"></i>
+                    <!--Command-dropdowncontent inside the Command-dropdownbtn on the main side of the page-->
+                        <div class ="Command-dropdowncontent">
+                            <ul>
+                              <li><a href= "#" ><input type="checkbox">I</a></li>
+                              
+                            </ul>  
+                        </div> 
+
+                    </li>
+                    <!--Git-dropdownbtn li  inside the navigation on the main side -->
+                    <li class ="Git-dropdownbtn"><img src="gitlogo.png" height ="40px" width="40px"><a href="#"> Git </a><i class="down-arrow"></i>
+                    <!--Git-dropdowncontent inside the Git-dropdownbtn on the main side of the page-->
+                        <div class ="Git-dropdowncontent">
+                            <ul>
+                              <li><a href= "#" ><input type="checkbox">I</a></li>
+                              
+                            </ul>  
+                        </div> 
+
+                    </li>
+
+                    </li>
+                     <!--SQL-dropdownbtn li  inside the navigation on the main side -->
+                    <li class ="SQL-dropdownbtn"><img src="SQLlogo.png" height ="40px" width="40px"><a href="#"> SQL </a><i class="down-arrow"></i>
+                    <!--SQL-dropdowncontent  inside the SQL-dropdownbtn on the main side of the page-->
+                          <div class ="SQL-dropdowncontent">
+                            <ul>
+                              <li><a href= "#" ><input type="checkbox">All</a></li>
+                              <li><a href= "#" ><input type="checkbox">I</a></li>
+                              <li><a href= "#" ><input type="checkbox">II</a></li>
+                              <li><a href= "#" ><input type="checkbox">III</a></li>
+                              <li><a href= "#" ><input type="checkbox">IV</a></li>
+                              
+                            </ul>  
+                        </div> 
+
+                    </li>
+                    <!--Sass-dropdownbtn  li  inside the navigation on the main side -->
+                    <li class ="Sass-dropdownbtn"><img src="sasslogo.png" height ="40px" width="40px"><a href="#"> Sass </a><i class="down-arrow"></i>
+                    <!--Sass-dropdowncontent inside the Sass-dropdownbtn  on the main side of the page-->
+                          <div class ="Sass-dropdowncontent">
+                            <ul>
+
+                              <li><a href= "#" ><input type="checkbox">I</a></li>
+
+                            </ul>  
+                        </div> 
+                    </li>
+                    <!--Go-dropdownbtn  li  inside the navigation on the main side -->
+                    <li class ="Go-dropdownbtn"><img src="goologo.png" height ="40px" width="40px"><a href="#"> Go </a><i class="down-arrow"></i>
+                    <!--Go-dropdowncontent inside the Go-dropdownbtn on the main side of the page-->
+                        <div class ="Go-dropdowncontent">
+                            <ul>
+                              <li><a href= "#" ><input type="checkbox">All</a></li>
+                              <li><a href= "#" ><input type="checkbox">I</a></li>
+                              <li><a href= "#" ><input type="checkbox">II</a></li>
+                              <li><a href= "#" ><input type="checkbox">III</a></li>
+                              <li><a href= "#" ><input type="checkbox">IV</a></li>
+                              
+                            </ul>  
+                        </div> 
+                    </li>
+                    <!--React-dropdownbtn  li  inside the navigation on the main side -->
+                    <li class ="React-dropdownbtn"><img src="reactlogo.png" height ="40px" width="40px"><a href="#"> React </a><i class="down-arrow"></i>
+                    <!--React-dropdowncontent  inside the React-dropdownbtn  on the main side of the page-->
+                        <div class ="React-dropdowncontent">
+                            <ul>
+                              <li><a href= "#" ><input type="checkbox">All</a></li>
+                              <li><a href= "#" ><input type="checkbox">I</a></li>
+                              <li><a href= "#" ><input type="checkbox">II</a></li>
+                              <li><a href= "#" ><input type="checkbox">III</a></li>
+                              <li><a href= "#" ><input type="checkbox">IV</a></li>
+                              
+                            </ul>  
+                        </div> 
+                    
+                    </li>
+                    <!--Nodejs-dropdownbtn li  inside the navigation on the main side -->
+                    <li class ="Nodejs-dropdownbtn"><img src="nodejslogo.png" height ="40px" width="40px"><a href="#"> Node.js </a><i class="down-arrow"></i>
+                    <!--Nodejs-dropdowncontent inside the Nodejs-dropdownbtn  on the main side of the page-->
+                        <div class ="Nodejs-dropdowncontent">
+                            <ul>
+                              <li><a href= "#" ><input type="checkbox">All</a></li>
+                              <li><a href= "#" ><input type="checkbox">I</a></li>
+                              <li><a href= "#" ><input type="checkbox">II</a></li>
+                              <li><a href= "#" ><input type="checkbox">III</a></li>
+                              <li><a href= "#" ><input type="checkbox">IV</a></li>
+                              <li><a href= "#" ><input type="checkbox">V</a></li>
+                              <li><a href= "#" ><input type="checkbox">VI</a></li>
+                              
+                            </ul>  
+                        </div> 
+
+                    
+                    </li>
+
                
-            </ul> 
-        
+                </ul> 
+            </div> 
+           
+        <!--The div on the right-sie of the main page-->
             <div class="right-div">
+                <!--The left side of the right-sie of the main  section of the page-->
                     <div class = "All-div ">
                         <button class ="All-div-dropdown-button"><a href="#"> All </a></button>
                         <div class ="All-div-dropdown-content">
@@ -79,6 +292,7 @@
                 
                         </div>
                     </div>
+                    <!--The right side of the right-sie of the main section of the page-->
                     <div class ="div-Favorites">
                            
                         <button class ="div-Favorites-dropdown-button"><a href ="#">Favorites</a></button>
@@ -92,24 +306,27 @@
                                </a>
                             </div>
                     </div>
-            </div>
+                </div>
         
             
         
             
            
         
-        </div>
+        
 
         
 
     
    
 
-
-    
+      <!--The footer of the page-->
+      <div class = footer>
       <p class="contactus"><a href="#">Contact Us !</a></p>
       
-    </div> 
+      </div>
+    
+</div>  
     </body>
+   
 </html>

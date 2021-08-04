@@ -4,7 +4,7 @@ body {
     height: 100%;
     background-color: #B6E5D8;
 }
-/** general properties for the top-most grid element of libary **/
+/** general properties for the top-most grid element of library **/
 .top-grid{
     
     background-color:#8FDDE7;
@@ -100,7 +100,7 @@ body {
     transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   margin: 2px 2px 2px 4px ;
-  float: right;
+  float:right;
   }
 /**properties for  the  search bar on the left-side of the .top-grid**/
   .search-bar{
@@ -110,36 +110,37 @@ body {
       margin:10px;
   }
  
-/**properties for the nav bar on the left side of the main contents area of the page**/
-  /**.nav{
-    float:left;
-    width:200px;
-    height:710px;
-    background-color: lightcoral;
 
-  }
   /**properties for the main section for the site**/
  .main{
-     width:inherit;
-     height: 900px;
-     background-color: lawngreen;
+     width:100%;
+     height:1000px;
+     background-color: #B6E5D8;
  }
+/**properties for the navigation  bar on the left side of the main contents area of the page**/
+  .navigation{
+    float:left;
+    width:20%;
+    height:900px;
+    margin: 0% 3% 3% 0%;
+    background-color: #B6E5D8;
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+    overflow-y:auto;
+    
 
+  }
 /**properties for the ul of the nav bar on the left side of the main contents section**/
   .left-div {
   list-style-type: none;
-  margin: 4% 3% 3% 0%;
   padding:0;
-  width: 200px;
-  height:700px;
-
-
+  width: 280px;
+  height:fit-content;
+ 
   }
-  /**when a pointer is hovered over the the ul and on the li and the htmldropdownbtn, the background color should turn honeydrew **/
+/**PROPERTIES  OF THE HTML SECTION OF THE NAVIGATION BAR **/
 
-.left-div a:hover,.html-dropdown:hover .htmldropdownbtn{
-    background-color: honeydew;
-} 
 /**properties for the image on the htmldropdownbtn on the nav bar**/
 .htmldropdownbtn img{
     border-radius: 50%;
@@ -149,17 +150,18 @@ body {
 /**properties for the  li htmldropdownbtn on the nav bar **/
 .htmldropdownbtn {
     height: 50px;
-    width:200px;
+    width:280;
     background-color:tomato;
     position: relative;
-    
-    
-
+    outline: none;
+    margin: 0;
+    font-size: 16px;
 }
+
 /**properties for the link in the li in htmldropdownbtn **/
 .htmldropdownbtn a{   
     height: 50px;
-    width:200px;
+    width:280px;
     display: block;
     position:absolute;
     text-decoration: none;
@@ -167,41 +169,44 @@ body {
     color: black;
     text-align: center;   
 }
-/**when a pointer is hovered the li htmldropdownbtn which is in the nav the background color of the htmldropdownbtn should change to the honeydew color**/
-.nav a:hover,.left-div:hover .htmldropdownbtn{
+/*when a pointer hovers over the htmldropdownbtn the background should turn honeydew**/
+.htmldropdownbtn:hover, .htmldropdownbtn:focus{
     background-color: honeydew;
-} 
-/**properties for the html-dropdowncontent that is in the drop-down**/
+}
 
-.html-dropdowncontent{
+/**properties of the html-dropdowncontent  on the htmldropdownbtn on the navigation bar **/
+.html-dropdowncontent {
     display: none;
     position: absolute;
-    background-color:white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: tomato;
+    min-width: 200px;
+    min-height: 170px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    list-style:none;
+   
 }
-/**properties for the link in the  html-dropdowncontent in the drop-down section**/
-.html-dropdowncontent a{
+/**properties of the links on the html-dropdowncontent on the htmldropdownbtn on the navigation bar **/
+.html-dropdowncontent  a {
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align:left;
-    padding: 12px 16px;  
+    text-align: left;
+}
+/**properties of the ul of the html-dropdowncontent **/
+.html-dropdowncontent ul{
+  line-height: 30px;
 }
 
-
-/**when a pointer is hovered over the html-dropdowncontent  the link background color should change to the honeydrew color**/
-.html-dropdowncontent a:hover{
-    background-color: honeydew;
-}
-/**when a pointer is hovered over the htmldropdownbtn the html-dropdowncontent displays its contents in block form**/
-.htmldropdownbtn:hover .html-dropdowncontent{
+  /* Show the html-dropdowncontent menu on hover */
+  .htmldropdownbtn:hover .html-dropdowncontent  {
     display: block;
 }
+
+/**PROPERTIES  the JS SECTION OF THE NAVIGATION BAR **/
+
+
 /** properties on the image of the js-dropdownbtn **/
 .js-dropdownbtn img{
     border-radius: 50%;
@@ -211,53 +216,63 @@ body {
 /**properties for the js-dropdownbtn on the nav bar**/
 .js-dropdownbtn{
     height: 50px;
-    width:200px;
+    width:280;
+    position: relative;
+    outline: none;
+    margin: 0;
+    font-size: 16px;
     background-color:rgb(225, 210, 41);   
 }
 /**properties for the links in the js-dropdownbtn **/
 .js-dropdownbtn a{
     height: 50px;
-    width:200px;
-    text-align: center;
+    width:280px;
     display: block;
     position:absolute;
-    cursor: pointer;
     text-decoration: none;
-    color: black;   
+    cursor: pointer;
+    color: black;
+    text-align: center;   
 }
-/**when a pointer hovers over the js-dropdowncontent that is inside the left-div on the nav, the background color should turn honeydrew**/
-.nav a:hover,.left-div:hover .js-dropdowncontent{
-    background-color: honeydew;
-} 
-/**properties for the js-dropdowncontent in the dropdown**/
+/**properties for the js-dropdowncontent that is in the drop-down**/
+
 .js-dropdowncontent{
     display: none;
     position: absolute;
-    background-color:white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: rgb(225, 210, 41);
+    min-width: 200px;
+    min-height: 170px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
     z-index: 1;
-
+    
 }
-/**properties for the links in the js-dropdowncontent **/
-.js-dropdowncontent a{
+/**properties for the link in the  js-dropdowncontent in the drop-down section**/
+.js-dropdowncontent  a{
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align:left;
-    padding: 12px 16px;
+    text-align: left;
+    
     
 }
-/**when a pointer is hovered over the js-dropdowncontent the background color turns honeydew**/
-.js-dropdowncontent a:hover{
-    background-color: honeydew;
-}
-/**when a pointer hovers over the js-dropdownbtn the js-dropdowncontent is displayed in block form **/
+/**properties of the ul of the js-dropdowncontent  **/
+.js-dropdowncontent  ul{
+    line-height: 30px;
+  
+  }
+/* Show the js-dropdowncontent menu on hover  over the js-dropdownbtn */
 .js-dropdownbtn:hover .js-dropdowncontent{
     display: block;
 }
+/** the js-dropdownbtn background color turns honey dew when a pointer is hovered**/
+.js-dropdownbtn:hover , .js-dropdownbtn:focus {
+    background-color: honeydew;
+}
+
+/**PROPERTIES  the JSES6 SECTION OF THE NAVIGATION BAR **/
+
 /**properties for the image of JSES6-dropdownbtn **/
 .JSES6-dropdownbtn img{
     border-radius: 50%;
@@ -267,13 +282,13 @@ body {
 /**properties for the JSES6-dropdownbtn  in the nav bar **/
 .JSES6-dropdownbtn{
     height: 50px;
-    width: 200px;
+    width: 280px;
     background-color:yellowgreen;
 }
 /**properties for  JSES6-dropdownbtn links **/
 .JSES6-dropdownbtn a{
     height: 50px;
-    width: 200px;
+    width: 280px;
     display: block;
     position:absolute;
     cursor: pointer;
@@ -281,6 +296,45 @@ body {
     color: black;
     text-align: center;
 }
+/**properties for the JSES6-dropdowncontent  that is in the drop-down on the JSES6-dropdownbtn inside the navigation bar **/
+
+.JSES6-dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color: yellowgreen;
+    min-width: 200px;
+    min-height: 300px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+/**properties for the links in the  JSES6-dropdowncontent  in the drop-down section**/
+.JSES6-dropdowncontent a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+    
+}
+/**properties of the ul of the JSES6-dropdowncontent **/
+.JSES6-dropdowncontent  ul{
+    line-height: 30px;
+  
+  }
+/* Show the JSES6-dropdowncontent menu on hover */
+.JSES6-dropdownbtn:hover .JSES6-dropdowncontent{
+    display: block;
+}
+/** the JSES6-dropdownbtn background should change to honeydew when a pointer is hovered over it **/
+.JSES6-dropdownbtn:hover, .JSES6-dropdownbtn:focus{
+    background-color: honeydew;
+}
+
+/**PROPERTIES  the JQUERY SECTION OF THE NAVIGATION BAR **/
 /**properties for jQuery-dropdownbtn  image**/
 .jQuery-dropdownbtn img{
     border-radius: 50%;
@@ -290,13 +344,13 @@ body {
 /**properties for  jQuery-dropdownbtn **/
 .jQuery-dropdownbtn {
     height: 50px;
-    width: 200px;
+    width: 280px;
     background-color:white;
 }
 /**properties for the links in jQuery-dropdownbtn **/
 .jQuery-dropdownbtn a{
     height: 50px;
-    width: 200px;
+    width: 280px;
     display: block;
     position:absolute;
     cursor: pointer;
@@ -304,6 +358,46 @@ body {
     color: black;
     text-align: center;
 }
+/**properties of the  jQuery-dropdowncontent inside the jQuery-dropdownbtn on the navigation bar **/
+.jQuery-dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    min-height: 160px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+/**properties for the links in the  jQuery-dropdowncontent  in the drop-down section of the jQuery-dropdownbtn **/
+.jQuery-dropdowncontent a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+    
+}
+/**properties of the ul of the jQuery-dropdowncontent **/
+.jQuery-dropdowncontent  ul{
+    line-height: 30px;
+  
+}
+
+/* Show the jQuery-dropdowncontent menu on hover of the jQuery-dropdownbtn */
+.jQuery-dropdownbtn:hover .jQuery-dropdowncontent {
+    display: block;
+}
+
+/**jQuery-dropdownbtn background color should change to honey dew when a pointer is hovered. **/
+.jQuery-dropdownbtn:hover , .jQuery-dropdownbtn:focus {
+    background-color: honeydew;
+}
+
+/**PROPERTIES OF THE RUBY SECTION ON THE  NAVIGATION BAR. **/
 /**properties for the image of Ruby-dropdownbtn **/
 .Ruby-dropdownbtn img{
     border-radius: 50%;
@@ -313,13 +407,13 @@ body {
 /**properties of Ruby-dropdownbtn in the nav bar  **/
 .Ruby-dropdownbtn {
     height: 50px;
-    width: 200px;
+    width: 280px;
     background-color:hsl(0, 78%, 58%);
 }
 /**properties of links in Ruby-dropdownbtn **/
 .Ruby-dropdownbtn a{
     height: 50px;
-    width: 200px;
+    width: 280px;
     display: block;
     position:absolute;
     cursor: pointer;
@@ -327,6 +421,48 @@ body {
     color: black;
     text-align: center;
 }
+
+/**properties of the  Ruby-dropdowncontent  inside the  Ruby-dropdownbtn  on the navigation bar **/
+.Ruby-dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 78%, 58%);
+    min-width: 200px;
+    min-height: 200px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+/**properties for the links in the  Ruby-dropdowncontent in the drop-down section of the Ruby-dropdownbtn **/
+.Ruby-dropdowncontent a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+    
+}
+/**properties of the ul of the Ruby-dropdowncontent **/
+.Ruby-dropdowncontent ul{
+    line-height: 30px;
+  
+}
+
+/* Show the Ruby-dropdowncontent menu on hover of the Ruby-dropdownbtn*/
+.Ruby-dropdownbtn:hover .Ruby-dropdowncontent{
+    display: block;
+}
+
+/**Ruby-dropdownbtn background color should change to honey dew when a pointer is hovered. **/
+.Ruby-dropdownbtn:hover , .Ruby-dropdownbtn:focus {
+    background-color: honeydew;
+}
+
+
+/**PROPERTIES OF THE RAILS5 SECTION ON THE NAVIGATION BAR **/
 /**properties of image of Rails5-dropdownbtn **/
 .Rails5-dropdownbtn img{
     border-radius: 50%;
@@ -336,13 +472,13 @@ body {
 /**properties of Rails5-dropdownbtn in the nav bar **/
 .Rails5-dropdownbtn {
     height: 50px;
-    width: 200px;
+    width: 280px;
     background-color: white;
 }
 /**properties for Rails5-dropdownbtn  links **/
 .Rails5-dropdownbtn a{
     height: 50px;
-    width: 200px;
+    width: 280px;
     display: block;
     position:absolute;
     cursor: pointer;
@@ -350,6 +486,46 @@ body {
     color: black;
     text-align: center;
 }
+/**properties of the  Rails5-dropdowncontent inside the  Rails5-dropdownbtn on the navigation bar **/
+.Rails5-dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    min-height: 400px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+/**properties for the links in the  Rails5-dropdowncontentin the drop-down section of the Rails5-dropdownbtn **/
+.Rails5-dropdowncontent a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+    
+}
+/**properties of the ul of the Rails5-dropdowncontent**/
+.Rails5-dropdowncontent ul{
+    line-height: 30px;
+  
+}
+
+/* Show the Rails5-dropdowncontent menu on hover of the Rails5-dropdownbtn */
+.Rails5-dropdownbtn:hover .Rails5-dropdowncontent{
+    display: block;
+}
+
+/**Rails5-dropdownbtn  background color should change to honey dew when a pointer is hovered. **/
+.Rails5-dropdownbtn:hover , .Rails5-dropdownbtn:focus {
+    background-color: honeydew;
+}
+
+/**PROPERTIES OF THE PHP SECTION ON THE NAVIGATION BAR **/
 /** properties for PHP-dropdownbtn image**/
 .PHP-dropdownbtn img{
     border-radius: 50%;
@@ -359,13 +535,13 @@ body {
 /**properties for PHP-dropdownbtn in the nav bar  **/
 .PHP-dropdownbtn {
     height: 50px;
-    width: 200px;
+    width: 280px;
     background-color: #787CB5;
 }
 /**properties  for the PHP-dropdownbtn links **/
 .PHP-dropdownbtn a{
     height: 50px;
-    width: 200px;
+    width: 280px;
     display: block;
     position:absolute;
     cursor: pointer;
@@ -373,6 +549,47 @@ body {
     color: black;
     text-align: center;
 }
+/**properties of the  PHP-dropdowncontent  inside the  PHP-dropdownbtn on the navigation bar **/
+.PHP-dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #787CB5;
+    min-width: 200px;
+    min-height: 170px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+/**properties for the links in the  PHP-dropdowncontent  in the drop-down section of the PHP-dropdownbtn **/
+.PHP-dropdowncontent  a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+    
+}
+/**properties of the ul of the PHP-dropdowncontent **/
+.PHP-dropdowncontent  ul{
+    line-height: 30px;
+  
+}
+
+/* Show the PHP-dropdowncontent  menu on hover of the PHP-dropdownbtn */
+.PHP-dropdownbtn:hover .PHP-dropdowncontent{
+    display: block;
+}
+
+/**PHP-dropdownbtn  background color should change to honey dew when a pointer is hovered. **/
+.PHP-dropdownbtn:hover , .PHP-dropdownbtn:focus {
+    background-color: honeydew;
+}
+
+
+/**PROPERTIES OF THE JAVA SECTION ON THE NAVIGATION BAR**/
 /**properties for the Java-dropdownbtn  image **/
 .Java-dropdownbtn img{
     border-radius: 50%;
@@ -382,13 +599,13 @@ body {
 /**properties for the Java-dropdownbtn in the nav bar **/
 .Java-dropdownbtn {
     height: 50px;
-    width: 200px;
+    width: 280px;
     background-color: #5382a1;
 }
 /**properties for Java-dropdownbtn links **/
 .Java-dropdownbtn a{
     height: 50px;
-    width: 200px;
+    width: 280px;
     display: block;
     position:absolute;
     cursor: pointer;
@@ -396,6 +613,44 @@ body {
     color: black;
     text-align: center;
 }
+/**properties of the  .Java-dropdowncontent  inside the  Java-dropdownbtn on the navigation bar **/
+.Java-dropdowncontent  {
+    display: none;
+    position: absolute;
+    background-color: #5382a1;
+    min-width: 200px;
+    min-height: 200px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+/**properties for the links in the  .Java-dropdowncontent  in the drop-down section of the Java-dropdownbtn **/
+.Java-dropdowncontent   a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+    
+}
+/**properties of the ul of the .Java-dropdowncontent **/
+.Java-dropdowncontent   ul{
+    line-height: 30px;
+  
+}
+
+/* Show the .Java-dropdowncontent  menu on hover of the Java-dropdownbtn */
+.Java-dropdownbtn:hover .Java-dropdowncontent{
+    display: block;
+}
+
+/**Java-dropdownbtn background color should change to honey dew when a pointer is hovered. **/
+.Java-dropdownbtn:hover , .Java-dropdownbtn:focus {
+    background-color: honeydew;
+}
+/**PROPERTIES OF THE PYTHON SECTION ON THE NAVIGATION BAR **/
 /**propeerties of the Python-dropdownbtn image **/
 .Python-dropdownbtn img{
     border-radius: 50%;
@@ -405,13 +660,13 @@ body {
 /**properties of Python-dropdownbtn  in the nav bar  **/
 .Python-dropdownbtn {
     height: 50px;
-    width: 200px;
+    width: 280px;
     background-color: #FFD43B;
 }
 /**properties of Python-dropdownbtn  links **/
 .Python-dropdownbtn a{
     height: 50px;
-    width: 200px;
+    width: 280px;
     display: block;
     position:absolute;
     cursor: pointer;
@@ -419,6 +674,45 @@ body {
     color: black;
     text-align: center;
 }
+/**properties of the  .Python-dropdowncontent inside the  Python-dropdownbtn on the navigation bar **/
+.Python-dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #FFD43B;
+    min-width: 200px;
+    min-height: 180px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+/**properties for the links in the  .Python-dropdowncontent in the drop-down section of the Python-dropdownbtn**/
+.Python-dropdowncontent  a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+    
+}
+/**properties of the ul of the .Python-dropdowncontent **/
+.Python-dropdowncontent   ul{
+    line-height: 30px;
+  
+}
+
+/* Show the .Python-dropdowncontent menu on hover of the Python-dropdownbtn*/
+.Python-dropdownbtn:hover .Python-dropdowncontent{
+    display: block;
+}
+
+/**Python-dropdownbtn  background color should change to honey dew when a pointer is hovered. **/
+.Python-dropdownbtn:hover , .Python-dropdownbtn:focus {
+    background-color: honeydew;
+}
+
+/**PROPERTIES OF THE COMMAND LINE SECTION OF THE NAVIGATION **/
 /**properties of the image in the Command-dropdownbtn **/
 .Command-dropdownbtn img{
     border-radius: 50%;
@@ -428,13 +722,13 @@ body {
 /**properties of the Command-dropdownbtn  in the nav bar **/
 .Command-dropdownbtn {
     height: 50px;
-    width: 200px;
+    width: 280px;
     background-color: grey;
 }
 /**properties of the .Command-dropdownbtn links **/
 .Command-dropdownbtn a{
     height: 50px;
-    width: 200px;
+    width: 280px;
     display: block;
     position:absolute;
     cursor: pointer;
@@ -442,6 +736,46 @@ body {
     color: black;
     text-align: center;
 }
+/**properties of the  .Command-dropdowncontent  inside the Command-dropdownbtn  on the navigation bar **/
+.Command-dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 200px;
+    min-height: 70px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+/**properties for the links in the  .Command-dropdowncontent in the drop-down section of the Command-dropdownbtn**/
+.Command-dropdowncontent  a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+    
+}
+/**properties of the ul of the .Command-dropdowncontent **/
+.Command-dropdowncontent  ul{
+    line-height: 30px;
+  
+}
+
+/* Show the .Command-dropdowncontent menu on hover of the Command-dropdownbtn*/
+.Command-dropdownbtn:hover .Command-dropdowncontent{
+    display: block;
+}
+
+/**Command-dropdownbtn background color should change to honey dew when a pointer is hovered. **/
+.Command-dropdownbtn:hover , .Command-dropdownbtn:focus {
+    background-color: honeydew;
+}
+
+
+/**PROPERTIES OF THE GIT SECTION OF THE NAVIGATION **/
 /**properties on the Git-dropdownbtn image **/
 .Git-dropdownbtn img{
     border-radius: 50%;
@@ -451,13 +785,13 @@ body {
 /**properties on the Git-dropdownbtn on the nav bar **/
 .Git-dropdownbtn {
     height: 50px;
-    width: 200px;
+    width: 280px;
     background-color: #F1502F;
 }
 /**properties for the Git-dropdownbtn links **/
 .Git-dropdownbtn a{
     height: 50px;
-    width: 200px;
+    width: 280px;
     display: block;
     position:absolute;
     cursor: pointer;
@@ -465,22 +799,60 @@ body {
     color: black;
     text-align: center;
 }
-/**properties of the  SQL-htmldropdownbtn image **/
-.SQL-htmldropdownbtn img{
+/**properties of the  .Git-dropdowncontent  inside the Git-dropdownbtn on the navigation bar **/
+.Git-dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #F1502F;
+    min-width: 200px;
+    min-height: 70px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+/**properties for the links in the Git-dropdowncontent  in the drop-down section of the Git-dropdownbtn**/
+.Git-dropdowncontent  a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+       
+}
+/**properties of the ul of the .Git-dropdowncontent **/
+.Git-dropdowncontent ul{
+    line-height: 30px;
+  
+}
+
+/* Show the .Git-dropdowncontent  menu on hover of the Git-dropdownbtn*/
+.Git-dropdownbtn:hover .Git-dropdowncontent{
+    display: block;
+}
+
+/**Git-dropdownbtn background color should change to honey dew when a pointer is hovered. **/
+.Git-dropdownbtn:hover , .Git-dropdownbtn:focus {
+    background-color: honeydew;
+}
+
+/**PROPERTIES OF THE SQL SECTION ON THE NAVIGATION BAR. **/
+/**properties of the  SQL-dropdownbtn image **/
+.SQL-dropdownbtn img{
     border-radius: 50%;
     float:left;
     margin: 2px;
 }
-/**properties of the SQL-htmldropdownbtn  in the nav bar  **/
-.SQL-htmldropdownbtn {
+/**properties of the SQL-dropdownbtn  in the nav bar  **/
+.SQL-dropdownbtn {
     height: 50px;
-    width: 200px;
+    width: 280px;
     background-color: white;
 }
-/**properties of the SQL-htmldropdownbtn **/
-.SQL-htmldropdownbtn a{
+/**properties of the SQL-dropdownbtn **/
+.SQL-dropdownbtn a{
     height: 50px;
-    width: 200px;
+    width: 280px;
     display: block;
     position:absolute;
     cursor: pointer;
@@ -488,6 +860,46 @@ body {
     color: black;
     text-align: center;
 }
+/**properties of the  .SQL-dropdowncontent  inside the SQL-dropdownbtn  on the navigation bar **/
+.SQL-dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    min-height: 170px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+/**properties for the links in the SQL-dropdowncontent in the drop-down section of the SQL-dropdownbtn**/
+.SQL-dropdowncontent  a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+       
+}
+/**properties of the ul of the SQL-dropdowncontent**/
+.SQL-dropdowncontent ul{
+    line-height: 30px;
+  
+}
+
+/* Show the SQL-dropdowncontent  menu on hover of the SQL-dropdownbtn*/
+.SQL-dropdownbtn:hover .SQL-dropdowncontent{
+    display: block;
+}
+
+/**SQL-dropdownbtn background color should change to honey dew when a pointer is hovered. **/
+.SQL-dropdownbtn:hover , .SQL-dropdownbtn:focus {
+    background-color: honeydew;
+}
+
+
+
+/**PROPERTIES OF THE SASS SECTION OF THE NAVIGATION BAR **/
 /**properties for the Sass-dropdownbtn image**/
 .Sass-dropdownbtn img{
     border-radius: 50%;
@@ -497,13 +909,13 @@ body {
 /**properties for the Sass-dropdownbtn in the nav bar**/
 .Sass-dropdownbtn {
     height: 50px;
-    width: 200px;
+    width: 280px;
     background-color: #ed8cbc;
 }
 /**properties for the Sass-dropdownbtn link **/
 .Sass-dropdownbtn a{
     height: 50px;
-    width: 200px;
+    width: 280px;
     display: block;
     position:absolute;
     cursor: pointer;
@@ -511,6 +923,45 @@ body {
     color: black;
     text-align: center;
 }
+/**properties of the  .Sass-dropdowncontent inside the Sass-dropdownbtn on the navigation bar **/
+.Sass-dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color: #ed8cbc;
+    min-width: 200px;
+    min-height: 70px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+/**properties for the links in the Sass-dropdowncontent in the drop-down section of the Sass-dropdownbtn**/
+.Sass-dropdowncontent a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+       
+}
+/**properties of the ul of the Sass-dropdowncontent**/
+.Sass-dropdowncontent  ul{
+    line-height: 30px;
+  
+}
+
+/* Show the Sass-dropdowncontent menu on hover of the Sass-dropdownbtn*/
+.Sass-dropdownbtn:hover .Sass-dropdowncontent{
+    display: block;
+}
+
+/**Sass-dropdownbtn background color should change to honey dew when a pointer is hovered. **/
+.Sass-dropdownbtn:hover , .Sass-dropdownbtn:focus {
+    background-color: honeydew;
+}
+
+
+/**PROPERTIES OF THE GO SECTION ON THE NAVIGATION BAR **/
 /**properties for the Go-dropdownbtn  image **/
 .Go-dropdownbtn img{
     border-radius: 50%;
@@ -520,13 +971,13 @@ body {
 /**properties for the Go-dropdownbtn **/
 .Go-dropdownbtn {
     height: 50px;
-    width: 200px;
+    width: 280px;
     background-color: #00C5CD;
 }
  /**properties for the links in  Go-dropdownbtn **/
 .Go-dropdownbtn  a{
     height: 50px;
-    width: 200px;
+    width: 280px;
     display: block;
     position:absolute;
     cursor: pointer;
@@ -534,6 +985,44 @@ body {
     color: black;
     text-align: center;
 }
+/**properties of the  .Go-dropdowncontent inside the Go-dropdownbtn on the navigation bar **/
+.Go-dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color: #00C5CD;
+    min-width: 200px;
+    min-height: 170px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+/**properties for the links in the Go-dropdowncontent in the drop-down section of the Go-dropdownbtn**/
+.Go-dropdowncontent a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+       
+}
+/**properties of the ul of the Go-dropdowncontent**/
+.Go-dropdowncontent ul{
+    line-height: 30px;
+  
+}
+
+/* Show the Go-dropdowncontent  menu on hover of the Go-dropdownbtn*/
+.Go-dropdownbtn:hover .Go-dropdowncontent{
+    display: block;
+}
+
+/**Go-dropdownbtn background color should change to honey dew when a pointer is hovered. **/
+.Go-dropdownbtn:hover , .Go-dropdownbtn:focus {
+    background-color: honeydew;
+}
+
+/**PROPERTIES OF THE REACT SECTION OF THE NAVIGATION BAR **/
 /**properties for the image of React-dropdownbtn **/
 .React-dropdownbtn img{
     border-radius: 50%;
@@ -543,13 +1032,13 @@ body {
 /**properties for the React-dropdownbtn  in the nav bar**/
 .React-dropdownbtn {
     height: 50px;
-    width: 200px;
+    width: 280px;
     background-color: #61DBFB;
 }
 /**properties for the links in React-dropdownbtn **/
 .React-dropdownbtn  a{
     height: 50px;
-    width: 200px;
+    width: 280px;
     display: block;
     position:absolute;
     cursor: pointer;
@@ -557,6 +1046,45 @@ body {
     color: black;
     text-align: center;
 }
+/**properties of the  .React-dropdowncontent inside the React-dropdownbtn on the navigation bar **/
+.React-dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color: #61DBFB;
+    min-width: 200px;
+    min-height: 170px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+/**properties for the links in the React-dropdowncontent in the drop-down section of the React-dropdownbtn **/
+.React-dropdowncontent a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+       
+}
+/**properties of the ul of the React-dropdowncontent**/
+.React-dropdowncontent ul{
+    line-height: 30px;
+  
+}
+
+/* Show the React-dropdowncontent  menu on hover of the React-dropdownbtn */
+.React-dropdownbtn:hover .React-dropdowncontent{
+    display: block;
+}
+
+/**React-dropdownbtn background color should change to honey dew when a pointer is hovered. **/
+.React-dropdownbtn:hover , .React-dropdownbtn:focus {
+    background-color: honeydew;
+}
+
+
+/**PROPERTIES OF THE NODEJS SECTION OF THE NAVIGATION BAR **/
 /**properties for the image Node.js-dropdownbtn **/
 .Nodejs-dropdownbtn img{
     border-radius: 50%;
@@ -566,13 +1094,13 @@ body {
 /**properties for the Node.js-dropdownbtn  in the nav bar **/
 .Nodejs-dropdownbtn {
     height: 50px;
-    width: 200px;
+    width: 280px;
     background-color: #68A063;
 }
 /**properties of the links of Node.js-dropdownbtn **/
 .Nodejs-dropdownbtn a{
     height: 50px;
-    width: 200px;
+    width: 280px;
     display: block;
     position:absolute;
     cursor: pointer;
@@ -580,13 +1108,51 @@ body {
     color: black;
     text-align: center;
 }
+/**properties of the  .Nodejs-dropdowncontent inside the Nodejs-dropdownbtn  on the navigation bar **/
+.Nodejs-dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #68A063;
+    min-width: 200px;
+    min-height: 250px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+/**properties for the links in the Nodejs-dropdowncontent in the drop-down section of the Nodejs-dropdownbtn **/
+.Nodejs-dropdowncontent a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+       
+}
+/**properties of the ul of the Nodejs-dropdowncontent**/
+.Nodejs-dropdowncontent ul{
+    line-height: 30px;
+  
+}
+
+/* Show the Nodejs-dropdowncontent menu on hover of the Nodejs-dropdownbtn  */
+.Nodejs-dropdownbtn:hover .Nodejs-dropdowncontent{
+    display: block;
+}
+
+/**Nodejs-dropdownbtn  background color should change to honey dew when a pointer is hovered. **/
+.Nodejs-dropdownbtn:hover , .Nodejs-dropdownbtn:focus {
+    background-color: honeydew;
+}
+
+
 /**properties for the div-grid on the right side of the main contents section **/
 .right-div{
     display: grid;
-    float: right;
+    float:right;
     height: 70px;
-    width: 85%;
-    background-color: brown;
+    width: 75%;
+    background-color: #B6E5D8;
     grid-template-columns: auto auto ;
     grid-template-rows: auto;
     justify-content: center;
@@ -606,12 +1172,14 @@ body {
  height: 50px;
  width:500px;
  list-style: none;
+ 
  border-style: none;
 }
 /**properties for the All-div-dropdown-button that is on the All section**/
 .All-div-dropdown-button{
     height: 50px;
     width:500px;
+    background-color: #B6E5D8;
     border-style: none;
 }
 /**properties for the All-div-dropdown-content inside the All-div-dropdown-button **/
@@ -656,6 +1224,7 @@ body {
 .div-Favorites-dropdown-button{
     height: 50px;
     width:500px;
+    background-color: #B6E5D8;
     border-style: none;
 }
 /** when a pointer hovers over .div-Favorites and the div-Favorites-dropdown-button the background color turns honeydew **/
@@ -688,6 +1257,14 @@ body {
 .div-Favorites:hover .div-Favorites-dropdown-content{
     display: block;
 }
+/**properties for the footer **/
+.footer{
+ width: inherit;
+ height: 50px;
+ background-color: #B6E5D8;
+ display: grid;
+ float:bottom;
+}
 /**properties for the contactus div at the footer of the page**/
 .contactus{
     height:25px;
@@ -697,11 +1274,13 @@ body {
     border-color: tomato;
     border-style:outset;
     font-size:small;
-    padding:2px;
+    margin: 1% 2% 1% 90%;
+    
 }
 /** properties on the links on the contact us element **/
 .contactus a{
     text-decoration: none;
+    color: black;
 }
 
 
